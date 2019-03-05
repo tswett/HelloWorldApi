@@ -3,13 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.API", "Sample.API\Sample.API.csproj", "{8005DFE6-7976-4FC4-9A9D-BD8F4F2D120B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.API", "Sample.API\Sample.API.csproj", "{8005DFE6-7976-4FC4-9A9D-BD8F4F2D120B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Infrastructure", "Sample.Infrastructure\Sample.Infrastructure.csproj", "{5A0BC3AD-1212-4828-96A9-635181B67B63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Infrastructure", "Sample.Infrastructure\Sample.Infrastructure.csproj", "{5A0BC3AD-1212-4828-96A9-635181B67B63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Domain", "Sample.Domain\Sample.Domain.csproj", "{36557B97-20A4-4B4E-BDF5-258956359515}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Domain", "Sample.Domain\Sample.Domain.csproj", "{36557B97-20A4-4B4E-BDF5-258956359515}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Presentation", "Sample.Presentation\Sample.Presentation.csproj", "{4D2B180F-E176-42B8-BC0F-B7DB632CE08A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Presentation", "Sample.Presentation\Sample.Presentation.csproj", "{4D2B180F-E176-42B8-BC0F-B7DB632CE08A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{06316357-D78B-4E42-AD1F-DBB501346CD2}"
+	ProjectSection(SolutionItems) = preProject
+		readme.md = readme.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
