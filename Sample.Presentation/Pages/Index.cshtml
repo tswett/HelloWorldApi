@@ -6,5 +6,28 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>Greetings received from the API:</p>
+    <ul id="greeting-list"></ul>
 </div>
+
+@section Scripts
+{
+    <script>
+        for (i = 0; i < 10; i++) {
+            (function () {
+                var newListItem = $('<li></li>');
+                $('#greeting-list').append(newListItem);
+
+                // In more complex code, it would probably be a good idea to avoid hard-coding the
+                // URL for the API. But for this example, the disadvantages to hard-coding it are
+                // small, so I've gone ahead and hard-coded it.
+                $.getJSON(
+                    'https://localhost:44336/api/greeting',
+                    function (result) {
+                        newListItem.text(result.text);
+                    }
+                );
+            })();
+        }
+    </script>
+}
