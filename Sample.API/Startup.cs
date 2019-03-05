@@ -29,6 +29,10 @@ namespace Sample.API
 
         public void ConfigureServices(IServiceCollection services)
         {
+            // We're setting up a CORS policy which allows XHR requests from any origin. I don't
+            // know whether or not this CORS policy would be appropriate for production code, but
+            // it works for our purposes. If I were writing production code, I would ask some more
+            // knowledgeable coworkers if this CORS policy looks good.
             services.AddCors(
                 options =>
                 {
